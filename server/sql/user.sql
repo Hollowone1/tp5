@@ -1,0 +1,8 @@
+CREATE TABLE user_db (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  password_hash VARCHAR(128) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
