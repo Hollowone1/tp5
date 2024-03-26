@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
 })
 
 const [rows, fields] = await connection.execute(
-"SELECT * FROM user WHERE status = ?", [ 'OK' ] )
+    "SELECT id, email, first_name, last_name, password_hash, created_at FROM user_db" )
 
     return {
         user: rows
