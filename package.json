@@ -10,11 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
+    "mysql2": "^3.9.3",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@sidebase/nuxt-session": "^0.2.8"
+    "@sidebase/nuxt-session": "^0.2.8",
+    "@types/bluebird": "^3.5.42"
   }
 }
